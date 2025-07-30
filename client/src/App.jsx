@@ -11,7 +11,7 @@ import Layout from "./pages/owner/Layout";
 import AddCar from "./pages/owner/Addcar";
 
 import ManageCars from "./pages/owner/Managecars";
-import ManageBookings from "./pages/owner/ManageBookings";
+import ManageBookings from "./pages/owner/Managebookings";
 import Dashboard from "./pages/owner/Dashboard";
 
 import Navbar from "./components/Navbar";

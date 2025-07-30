@@ -7,21 +7,23 @@ import userRouter from "./routes/userRoutes.js";
 
 const app = express();
 
-// ✅ This MUST come before routes and JSON parsing
 app.use(cors({
-  origin: "http://localhost:5173", // Match React dev server
+  origin: "http://localhost:5173", // Update this when deploying frontend
   credentials: true
 }));
 
 app.use(express.json());
 
-// ✅ These are the correct routes
 app.use("/api/auth", userRouter);
-app.use("/api/user", userRouter); // You MUST have this for /user/data and /user/cars to work
+app.use("/api/user", userRouter);
 
-// ✅ Optional test route to debug CORS
 app.get("/api/test", (req, res) => {
   res.json({ message: "CORS is working ✅" });
+});
+
+// ✅ Add this root route
+app.get("/", (req, res) => {
+  res.send("🚀 Car Rental Backend is running.");
 });
 
 const PORT = process.env.PORT || 5000;

@@ -10,7 +10,7 @@ import MyBookings from "./pages/MyBookings";
 import Layout from "./pages/owner/Layout";
 import AddCar from "./pages/owner/Addcar";
 
-import ManageCars from "./pages/owner/ManageCars";
+import ManageCars from "./pages/owner/Managecars";
 import ManageBookings from "./pages/owner/ManageBookings";
 import Dashboard from "./pages/owner/Dashboard";
 

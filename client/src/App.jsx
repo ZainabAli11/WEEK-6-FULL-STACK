@@ -8,7 +8,8 @@ import CarDetails from "./pages/CarDetails";
 import MyBookings from "./pages/MyBookings";
 
 import Layout from "./pages/owner/Layout";
-import AddCar from "./pages/owner/AddCar";
+import AddCar from "./pages/owner/Addcar";
+
 import ManageCars from "./pages/owner/ManageCars";
 import ManageBookings from "./pages/owner/ManageBookings";
 import Dashboard from "./pages/owner/Dashboard";
